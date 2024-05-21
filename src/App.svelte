@@ -56,7 +56,6 @@
     <form on:submit|preventDefault={addMeetup}>
         <TextInput
             controlType="input"
-            type="text"
             label="Title"
             id="title"
             value={title}
@@ -64,7 +63,6 @@
         />
         <TextInput
             controlType="input"
-            type="text"
             label="Subtitle"
             id="subtitle"
             value={subtitle}
@@ -72,7 +70,6 @@
         />
         <TextInput
             controlType="input"
-            type="text"
             label="Address"
             id="address"
             value={address}
@@ -80,7 +77,6 @@
         />
         <TextInput
             controlType="input"
-            type="text"
             label="Image URL"
             id="imageURL"
             value={imageURL}
