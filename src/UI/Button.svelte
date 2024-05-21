@@ -1,14 +1,15 @@
-<script>
-    export let type = "button";
-    export let caption;
+<script lang="ts">
+    export let type: "button" | "submit" | "reset" | "link" = "button";
+    export let caption: any;
     export let href = null;
     export let mode = null;
+    export let color = null;
 </script>
 
-{#if href}
+{#if href || type === "link"}
     <a {href}>{caption}</a>
 {:else}
-    <button class={mode} {type}>{caption}</button>
+    <button class="{mode} {color}" {type} on:click>{caption}</button>
 {/if}
 
 <style>
